@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[testInvalidLogin is FAILED]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39813" started-at="2021-06-29T18:57:55Z" finished-at="2021-06-29T18:58:35Z">
+    <groups>
+      <group name="login">
+        <method signature="InvalidLogin_Test.testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@e45f292]" name="testInvalidLogin" class="script.InvalidLogin_Test"/>
+      </group> <!-- login -->
+    </groups>
+    <test name="Default test" duration-ms="39813" started-at="2021-06-29T18:57:55Z" finished-at="2021-06-29T18:58:35Z">
+      <class name="script.InvalidLogin_Test">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin_Test@e45f292]" name="openApp" is-config="true" duration-ms="18744" started-at="2021-06-30T00:27:55Z" finished-at="2021-06-30T00:28:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@e45f292]" name="testInvalidLogin" duration-ms="18587" started-at="2021-06-30T00:28:14Z" finished-at="2021-06-30T00:28:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username or Password is invalid. ] but found [Username or Password is invalid. Please try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username or Password is invalid. ] but found [Username or Password is invalid. Please try again.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at page.LoginPage.verifyErrorMSG(LoginPage.java:40)
+	at script.InvalidLogin_Test.testInvalidLogin(InvalidLogin_Test.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin_Test@e45f292]" name="closeApp" is-config="true" duration-ms="2426" started-at="2021-06-30T00:28:33Z" finished-at="2021-06-30T00:28:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=FAILURE method=InvalidLogin_Test.testInvalidLogin()[pri:2, instance:script.InvalidLogin_Test@e45f292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testInvalidLogin is FAILED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.InvalidLogin_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
